@@ -4,19 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
     <script>
         $(document).ready(function() {
+            $("footer").load("./pages/ui/footer");
          $("header").load("./pages/ui/header");
-         $("footer").load("./pages/ui/footer");
      });
          </script>
 </head>
 <body>
     <header></header>
-    <h1>This is the home page. Hello Fashion website capstone project</h1>
+    <section class="Hero_section">
+
+        <!-- Slideshow code, can be JQUERY -->
+        <a href="/pages/product.html">Explore Our New Collection</a>
+    </section>
+    <section class="Home_product_grid">
+        <!-- Use old code for our group frontend project, it's similar -->
+    </section>
+    <section>
+        <div>
+            <p>THE NEW COLLECTION IS THE SYNTHESIS OF
+                THE HARMONIOUS ELEMENTS OF PLAYFUL
+                ELEGANCE
+                
+               </p>
+               <a href="./pages/product.html">EXLORE OUR NEW WORLD</a>
+
+        </div>
+    </section>
+    <section class="Home_banner">
+        <div>
+            <p>Keep TO TIME WITH OUR NEW RELEASE</p>
+        </div>
+        <div>
+            <!-- flex justify to the right/end. then for above do left-->
+            <a href="./pages/product.html">Explore Now</a>
+        </div>
+    </section>
+
     <footer></footer>
 </body>
 </html>
