@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
    $(document).ready(function() {
@@ -16,29 +17,32 @@
 <body>
     <header></header>
     <hr/>
-    <h1>This is the Sign up Page</h1>
-    <div>
-        <form>
-            <fieldset>
-
-                <label for="email" aria-required="true">UserName/Email</label>
-                <input type="text" id="email" required/>
-            </fieldset>
-            <fieldset>
-
-                <label for="password" aria-required="true">Password</label>
-                <input type="text" id="password" required/>
-            </fieldset>
-            <fieldset>
-            <label for="password" aria-required="true">REMEMBER ME</label>
-            <input type="checkbox" name="remember" id="remember">
-            </fieldset>
-            <button type="submit">Sign up</button>
-            <a href="login.html">FORGOT PASSWORD</a>
-            <a href="signup.html">Sign Up</a>
+    <div class="container">
+        <form class="signup-form">
+          <h2>Signup</h2>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" class="form-control" required>
+          </div>
+          <button type="submit" class="signup-btn">Sign Up</button>
         </form>
-    </div>
-    <hr/>
+      </div>
+     
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
     <footer></footer>
 </body>
 </html>
