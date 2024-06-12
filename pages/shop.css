@@ -1,0 +1,48 @@
+body {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.checkout-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="number"],
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #000000;
+}
+
+.form-group select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 12px;
+    padding-right: 25px;
+}
+
+.form-group .btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
+    border: none;
+    border-radius: 3px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
